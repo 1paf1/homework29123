@@ -1,4 +1,8 @@
-a, b, c = int(input("Введіть число:")), int(input("Введіть число:")), int(input("Введіть число:"))
-print(max(a, b, c))
-print(min(a, b, c))
-print((a + b + c) / 3)
+n = float(input("Введіть число в метрах:"))
+choice = input("Оберіть одиницю вимірювання (1 - милі, 2 - дюйми, 3 - ярди): ")
+if choice == 1:
+    print(n / 1.609344)
+elif choice == 2:
+    print(n / 0.0254)
+else:
+    print(n / 0.9144)
